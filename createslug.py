@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     print(finish - start, 'sec')
 
-    b_class = CreateSlug('//\'-----здесь []  будет ... много пробелов-///-  ')
+    b_class = CreateSlug(input('это для тестов: '))
     print(b_class.create_slug(), '\'this is class method\'')
     print(b_class.phrase, '\'this is phrase\'')
     print(b_class)
