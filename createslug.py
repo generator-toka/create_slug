@@ -41,7 +41,7 @@ def create_slug(phrase):
 
     temp_slug = ''.join(temp_list)[:300]
 
-    result = re.sub((r'-+'), '-', temp_slug)
+    result = re.sub(r'-+', '-', temp_slug)
 
     if result.startswith('-'):
         result = result[1:]
@@ -50,7 +50,7 @@ def create_slug(phrase):
     return result
 
 
-class CreateSlug():
+class CreateSlug:
 
     """(ru)Класс для создания слагов с русского языка
        на английскую транслитерацию.
@@ -75,7 +75,7 @@ class CreateSlug():
 
         temp_slug = ''.join(temp_list)[:300]
 
-        result = re.sub((r'-+'), '-', temp_slug)
+        result = re.sub(r'-+', '-', temp_slug)
 
         if result.startswith('-'):
             result = result[1:]
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
     print(finish - start, 'sec')
 
-    b_class = CreateSlug('//\'-----здесь []  будет ... много пробелов-///-  ')
+    b_class = CreateSlug('--------------------------Наследование классов в Python 3----------------------------')
     print(b_class.create_slug(), '\'this is class method\'')
     print(b_class.phrase, '\'this is phrase\'')
     print(b_class)
