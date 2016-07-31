@@ -89,7 +89,7 @@ class CreateSlug:
 
 if __name__ == '__main__':
     import time
-
+    # simple tests
     start = time.clock()
     x_func = create_slug('--------здесь []  будет ... много пробелов------  ')
     print(x_func, '\'this is function\'')
